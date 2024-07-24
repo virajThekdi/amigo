@@ -1,0 +1,22 @@
+/* styles.css */
+.review {
+    border: 1px solid palegreen;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: right;
+}
+
+.customer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stars {
+    color: #fdd835; /* Yellow color for filled stars */
+}
+
+.star {
+    font-size: 24px;
+    margin-right: 5px;
+}

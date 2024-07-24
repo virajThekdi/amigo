@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo - Travel Community</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            background-image: url('backimage.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: #6a0572; /* Purple */
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #ffffff; /* White */
+        }
+        nav a {
+            color: #6a0572; /* Purple */
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        .logo {
+            max-width: 40px; /* Decreased from 100px */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 1rem;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+        .image-container {
+            flex: 1;
+            padding: 1rem;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+        .review-container {
+            background-color: #ffffff; /* White block */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reviews {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+        .review-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .review {
+            border: 1px solid palegreen;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            min-width: 300px;
+            flex: 0 0 300px;
+            box-sizing: border-box;
+        }
+        .customer-logo img {
+            max-width: 40px; /* Set the size of the customer logo to be small */
+            height: auto;
+        }
+        .stars {
+            color: #fdd835; /* Yellow color for filled stars */
+        }
+        .star {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px; /* Adjust spacing between icons */
+        }
+        .fa {
+            font-size: 24px; /* Adjust icon size */
+            color: #333; /* Set icon color */
+            text-decoration: none; /* Remove underline */
+        }
+        .fa:hover {
+            opacity: 0.7; /* Add hover effect */
+        }
+        footer {
+            background-color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer a {
+            color: #6a0572; /* Purple */
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amigo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+        <a href="community.html">Community</a>
+        <div class="logo">
+            <img src="logo.png" alt="Amigo Logo">
+        </div>
+    </nav>
+    <div class="content">
+        <div class="image-container">
+            <img src="image.jpg" alt="Travel Image">
+        </div>
+        <div>
+            <h2>Welcome to Our Travel Community!</h2>
+            <p>Explore amazing destinations, connect with fellow travelers, and share your experiences.</p>
+        </div>
+    </div>
+    <div class="review-container">
+        <div class="reviews" id="review-slider">
+            <div class="review">
+                <div class="customer-logo">
+                    <img src="customer1.png" alt="Customer Logo 1">
+                </div>
+                <div class="review-content">
+                    <h3>John Doe</h3>
+                    <p>Great experience! Lorem ipsum dolor sit amet...</p>
+                    <div class="stars">
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star-o star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="customer-logo">
+                    <img src="customer2.png" alt="Customer Logo 2">
+                </div>
+                <div class="review-content">
+                    <h3>Jane Smith</h3>
+                    <p>Wonderful trip! Lorem ipsum dolor sit amet...</p>
+                    <div class="stars">
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star-o star"></span>
+                        <span class="fa fa-star-o star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="customer-logo">
+                    <img src="customer3.png" alt="Customer Logo 3">
+                </div>
+                <div class="review-content">
+                    <h3>Sam Wilson</h3>
+                    <p>Good experience. Lorem ipsum dolor sit amet...</p>
+                    <div class="stars">
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star star"></span>
+                        <span class="fa fa-star-o star"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/your-facebook-page" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/your-twitter-account" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/your-instagram-account" class="fa fa-instagram"></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="security.html">Security</a>
+        </div>
+    </footer>
+    <script>
+        const ratingStars = [...document.getElementsByClassName("star")];
+
+        function executeRating(stars) {
+            const starClassActive = "fa fa-star star";
+            const starClassInactive = "fa fa-star-o star";
+            const starsLength = stars.length;
+            let i;
+
+            stars.map((star) => {
+                star.onclick = () => {
+                    i = stars.indexOf(star);
+                    if (star.className === starClassInactive) {
+                        for (i; i >= 0; --i) stars[i].className = starClassActive;
+                    } else {
+                        for (i; i < starsLength; ++i) stars[i].className = starClassInactive;
+                    }
+                };
+            });
+        }
+
+        executeRating(ratingStars);
+
+        // Review slider
+        const slider = document.getElementById('review-slider');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body>
+</html>

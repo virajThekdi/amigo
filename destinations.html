@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Amigo</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Add your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #6a0572; /* Purple */
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: #ffffff; /* White */
+        }
+        nav a {
+            color: #6a0572; /* Purple */
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        .logo {
+            max-width: 80px;
+            height: auto;
+            margin-right: 1rem;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+        .destination-block {
+            flex: 1;
+            padding: 0.5rem; /* Adjust padding */
+            text-align: center;
+            background-color: cornflowerblue;
+            border: 1px solid #ddd;
+            margin: 0.5rem; /* Adjust margin */
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+        h3 {
+            margin-top: 0.5rem; /* Add some spacing below the destination title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Destinations</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+        <!-- Add more navigation links as needed -->
+        <div class="logo">
+            <img src="logo.png" alt="Amigo Logo">
+        </div>
+    </nav>
+    <div class="content">
+        <div class="destination-block">
+            <a href="paris.html">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Explore the romantic streets of Paris!</p>
+            </a>
+        </div>
+        <div class="destination-block">
+            <a href="tokyo.html">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Discover the vibrant culture of Tokyo.</p>
+            </a>
+        </div>
+        <!-- Add more destination blocks here -->
+    </div>
+</body>
+</html>
